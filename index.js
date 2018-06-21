@@ -15,7 +15,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  
+  var cartItems = {}
+  if (cart.length === 0) {
+    return "Your shopping cart is empty."
+  } else {
+    for (var i = 0; i<cart.length; i++) {
+      if (i === 0) {
+        cartItems.push(`${cart[i] ["itemName"]} at ${cart[i] ["itemPrice"]}`)
+        else if ()
+      }
+    }
+  }
 }
 
 function total() {
