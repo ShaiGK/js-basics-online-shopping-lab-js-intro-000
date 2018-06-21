@@ -25,7 +25,7 @@ function viewCart() {
       } else if (i<cart.length-1 && i>0) {
           cartItems.push(` ${cart[i] ["itemName"]} at $${cart[i] ["itemPrice"]}`)
         } else if (i == cart.length-1) {
-          cartItems.push(` and ${cart[i] ["itemName"]} at ${cart[i] ["itemPrice"]}`)
+          cartItems.push(` and ${cart[i] ["itemName"]} at $${cart[i] ["itemPrice"]}`)
         }
       }
       return `In your cart, you have ${cartItems}.`
